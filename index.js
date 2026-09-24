@@ -1,7 +1,8 @@
-function calculateTax(price,taxRates) {
-    return price (taxRates/100);
-
+function calculateTax(amount) {
+  return amount * 0.10;
 }
+
+
 
 
 function convertToUpperCase(string) {
@@ -17,8 +18,8 @@ function isPalindrome(word) {
 	return word === reversed;
 }
 
-function calculateDiscountedPrice(price, discountPercentage) {
-	return price  (1 - discountPercentage / 100);
+function calculateDiscountedPrice(originalPrice, discountPercentage) {
+  return originalPrice - (originalPrice * discountPercentage / 100);
 }
 
 
